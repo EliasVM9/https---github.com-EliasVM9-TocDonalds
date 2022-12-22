@@ -68,7 +68,6 @@ class Venta(models.Model):
         choices=Estado.choices,
         default=Estado.PENDIENTE
     )
-fdsf
     def str(self):
         return "Pedido "+str(self.id)
 
