@@ -57,7 +57,7 @@ class Venta(models.Model):
     modo_entrega = models.CharField(max_length=64,null=True)
     entregado = models.BooleanField(default=False)
     finalizado = models.BooleanField(default=False)
-    total = models.IntegerField()
+    total = models.IntegerField(default=0)
     validado = models.BooleanField(default=False)
     class Estado(models.IntegerChoices):
         PENDIENTE = 1, "Pendiente de pago"

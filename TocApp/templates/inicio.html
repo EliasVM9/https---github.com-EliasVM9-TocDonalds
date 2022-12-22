@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    <style>
+table, th, td {
+  border: 1px solid;
+}
+</style>
+</head>
+<body>
+<a href="admin/">Ingresar a Administrador</a>
+<table>
+
+    <thead>
+<th>
+    Productos
+</th>
+    </thead>
+    <tbody>
+     {% for p in Productos %}
+     <tr>
+        <td> {{ c.nombreProd }} </td>
+         <td> {{ c.nombreTipo }} </td>
+         <td> {{ c.precio }} </td>
+     </tr>
+
+     {% endfor %}
+    </tbody>
+
+</table>
+
+</body>
+</html>
